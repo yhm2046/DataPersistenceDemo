@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnRead.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                保存地址data/data/com.example.datapersistencedemo/shared_prefs/data.xml
                 SharedPreferences preferences = getSharedPreferences("data",MODE_PRIVATE);
                 String name = preferences.getString("name","");
                 String logo = preferences.getString("logo","");
